@@ -1,0 +1,9 @@
+.env*
+!.env.sample
+node_modules
+dist
+coverage
+logs
+src/test/load/*.json
+src/test/load/*.html
+tsconfig.tsbuildinfo

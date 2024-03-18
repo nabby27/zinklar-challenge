@@ -1,0 +1,3 @@
+# Get if the service it's healthy
+GET http://localhost:8080/health
+Content-Type: application/json

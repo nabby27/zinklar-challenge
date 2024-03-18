@@ -1,0 +1,15 @@
+# Get extension count from url
+GET http://localhost:8080/count?url=https://github.com/argoproj/argo-site
+Content-Type: application/json
+
+###
+
+# Fail if url is invalid
+GET http://localhost:8080/count?url=example
+Content-Type: application/json
+
+###
+
+# Fail if url is not from github
+GET http://localhost:8080/count?url=http://example.com
+Content-Type: application/json
